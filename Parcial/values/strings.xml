@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Juego de Colores</string>
+    <string name="titulo_app">Juego de Colores</string>
+    <string name="descripcion_logo">Ícono de cerebro</string>
+    <string name="mensaje_bienvenida">Pon a prueba tu velocidad y atención.</string>
+    <string name="boton_iniciar_juego">Iniciar Juego</string>
+
+    <string name="titulo_reglas">Reglas del Juego</string>
+    <string name="reglas_juego">1. El juego dura 30 segundos.\n2. Debes presionar el botón que coincida con el <b>COLOR DE LA TINTA</b> del texto que aparece en pantalla.\n3. Ignora la palabra escrita (por ejemplo, si dice "ROJO" pero la tinta es azul, presiona AZUL).\n4. ¡Acierta lo más rápido posible!</string>
+    <string name="ok">Entendido</string>
+
+    <string name="formato_puntaje">Puntaje: %d</string>
+    <string name="formato_tiempo">Tiempo: %d s</string>
+    <string name="color_rojo">ROJO</string>
+    <string name="color_azul">AZUL</string>
+    <string name="color_verde">VERDE</string>
+    <string name="color_amarillo">AMARILLO</string>
+
+    <string name="titulo_resultados">Resultados de la Partida</string>
+    <string name="formato_puntaje_final">Puntaje Final: %d</string>
+    <string name="formato_puntaje_alto">Récord Histórico: %d</string>
+    <string name="etiqueta_historial">Historial de Puntajes de la Sesión:</string>
+    <string name="boton_jugar_otra_vez">Volver a Jugar</string>
+
+    <string name="formato_item_historial">Partida #%1$d: %2$d puntos</string>
+    <string name="fácil">FÁCIL</string>
+    <string name="media">MEDIA</string>
+    <string name="difícil">DIFÍCIL</string>
+    <string name="dificultad">¡Seleccione una dificultad para empezar a jugar!</string>
+</resources>
