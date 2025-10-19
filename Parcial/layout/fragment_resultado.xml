@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/fondo_resultados"
+    tools:context=".ResultadoFragment">
+
+    <TextView
+        android:id="@+id/texto_titulo_resultados"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/titulo_resultados"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:textColor="@color/texto_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/texto_puntaje_final"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:textSize="28sp"
+        android:textColor="@color/texto_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/texto_titulo_resultados"
+        tools:text="Puntaje Final: 42" />
+
+    <TextView
+        android:id="@+id/texto_puntaje_alto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textSize="20sp"
+        android:textColor="@color/texto_color_secundario"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/texto_puntaje_final"
+        tools:text="Récord Histórico: 50" />
+
+    <TextView
+        android:id="@+id/texto_etiqueta_historial"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/etiqueta_historial"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        android:textColor="@color/texto_color"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/texto_puntaje_alto" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/lista_historial_puntajes"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:padding="8dp"
+        android:background="@drawable/fondo_redondeado_claro"
+        app:layout_constraintBottom_toTopOf="@id/boton_jugar_otra_vez"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/texto_etiqueta_historial"
+        tools:listitem="@layout/item_puntaje" />
+
+    <Button
+        android:id="@+id/boton_jugar_otra_vez"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/boton_jugar_otra_vez"
+        android:textSize="20sp"
+        android:padding="16dp"
+        android:backgroundTint="@color/boton_primario"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
