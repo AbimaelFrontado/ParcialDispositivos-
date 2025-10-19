@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/bienvenidaFragment">
+
+    <fragment
+        android:id="@+id/bienvenidaFragment"
+        android:name="com.abi.parcial.BienvenidaFragment"
+        android:label="fragment_bienvenida"
+        tools:layout="@layout/fragment_bienvenida" >
+
+        <action
+            android:id="@+id/accion_bienvenida_a_juego"
+            app:destination="@id/juegoFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/juegoFragment"
+        android:name="com.abi.parcial.JuegoFragment"
+        android:label="fragment_juego"
+        tools:layout="@layout/fragment_juego" >
+
+        <action
+            android:id="@+id/accion_juego_a_resultado"
+            app:destination="@id/resultadoFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/resultadoFragment"
+        android:name="com.abi.parcial.ResultadoFragment"
+        android:label="fragment_resultado"
+        tools:layout="@layout/fragment_resultado" >
+
+        <action
+            android:id="@+id/accion_resultado_a_juego"
+            app:destination="@id/juegoFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+
+</navigation>
